@@ -1,0 +1,3 @@
+[submodule "gym_tensorflow/atari-py"]
+	path = gym_tensorflow/atari-py
+	url = https://github.com/fps7806/atari-py.git
