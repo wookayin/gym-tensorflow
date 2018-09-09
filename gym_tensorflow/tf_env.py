@@ -19,7 +19,7 @@ import os
 
 import tensorflow as tf
 
-gym_tensorflow_module = tf.load_op_library(os.path.join(os.path.dirname(__file__), 'gym_tensorflow.so'))
+gym_tensorflow_module = tf.load_op_library(os.path.join(os.path.dirname(__file__), '_gym_tensorflow.so'))
 
 
 class TensorFlowEnv(object):

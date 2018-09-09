@@ -39,12 +39,12 @@ ifeq ($(strip $(USE_SDL)), 1)
 endif
 
 
-all: gym_tensorflow.so
+all: _gym_tensorflow.so
 
-gym_tensorflow.so:
-	$(CXX) $(FLAGS) $(SOURCES) $(LDFLAGS) -o gym_tensorflow.so
+_gym_tensorflow.so:
+	$(CXX) $(FLAGS) $(SOURCES) $(LDFLAGS) -o _gym_tensorflow.so
 
 clean:
-	rm -rf gym_tensorflow.so
+	rm -rf _gym_tensorflow.so
 
 remake: clean all
